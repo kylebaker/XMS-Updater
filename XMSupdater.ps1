@@ -10,56 +10,56 @@ function NuspecFile ($xmsVersion, $onlineVersion){
 
     if ($xmsVersion -eq "gms") {
             $filetext = @"
-`<?xml version="1.0"?>
-`<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-`  <metadata>
-`    <id>gms</id>
-`    <version>$onlineVersion</version>
-`    <title>Groundwater Modeling System (GMS) Software</title>
-`    <authors>Aquaveo</authors>
-`    <owners>kylebaker</owners>
-`    <licenseUrl>http://aquaveo.com/end-user-license-agreement</licenseUrl>
-`    <projectUrl>http://aquaveo.com/software/gms-groundwater-modeling-system-introduction</projectUrl>
-`    <iconUrl>https://cdn.jsdelivr.net/gh/kylebaker/AquaveoChocolateyPackages@master/icons/gms-icon.png</iconUrl>
-`    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-`    <description>### A valid license from Aquaveo is required to use this software
-`
-`        ###Speed up and simplify model building with the conceptual model approach in GMS
-`       We pioneered conceptual modeling and have refined it over many years. That's why GMS is the quickest and most intuitive groundwater modeling interface available. Construct a high level representation of the model using familiar GIS objects: points, arcs and polygons and easily update the model as needed.</description>
-`    <summary>Groundwater and subsurface simulations in a 3D environment.</summary>
-`    <copyright>2019 Aquaveo, LLC</copyright>
-`    <tags>wms aquaveo trial</tags>
-`    <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
-`  </metadata>
-` </package>
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>gms</id>
+    <version>$onlineVersion</version>
+    <title>Groundwater Modeling System (GMS) Software</title>
+    <authors>Aquaveo</authors>
+    <owners>kylebaker</owners>
+    <licenseUrl>http://aquaveo.com/end-user-license-agreement</licenseUrl>
+    <projectUrl>http://aquaveo.com/software/gms-groundwater-modeling-system-introduction</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/kylebaker/AquaveoChocolateyPackages@master/icons/gms-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>### A valid license from Aquaveo is required to use this software
+
+        ###Speed up and simplify model building with the conceptual model approach in GMS
+       We pioneered conceptual modeling and have refined it over many years. That's why GMS is the quickest and most intuitive groundwater modeling interface available. Construct a high level representation of the model using familiar GIS objects: points, arcs and polygons and easily update the model as needed.</description>
+    <summary>Groundwater and subsurface simulations in a 3D environment.</summary>
+    <copyright>2019 Aquaveo, LLC</copyright>
+    <tags>wms aquaveo trial</tags>
+    <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
+  </metadata>
+ </package>
 "@
     }
     if ($xmsVersion -eq "sms") {
         $filetext = @"
-`<?xml version="1.0"?>
-`<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-`  <metadata>
-`    <id>sms</id>
-`    <version>$onlineVersion</version>
-`    <title>Surface-water Modeling System (SMS) Software</title>
-`    <authors>Aquaveo</authors>
-`    <owners>kylebaker</owners>
-`    <licenseUrl>http://aquaveo.com/end-user-license-agreement</licenseUrl>
-`    <projectUrl>http://aquaveo.com/software/sms-surface-water-modeling-system-introduction</projectUrl>
-`    <iconUrl>https://cdn.jsdelivr.net/gh/kylebaker/AquaveoChocolateyPackages@master/icons/sms-icon.png</iconUrl>
-`    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-`    <description>### A valid license from Aquaveo is required to use this software
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sms</id>
+    <version>$onlineVersion</version>
+    <title>Surface-water Modeling System (SMS) Software</title>
+    <authors>Aquaveo</authors>
+    <owners>kylebaker</owners>
+    <licenseUrl>http://aquaveo.com/end-user-license-agreement</licenseUrl>
+    <projectUrl>http://aquaveo.com/software/sms-surface-water-modeling-system-introduction</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/kylebaker/AquaveoChocolateyPackages@master/icons/sms-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>### A valid license from Aquaveo is required to use this software
 
-`        ### Flexible modeling approaches
-`Aquaveo pioneered the conceptual model approach. Build a conceptual model in SMS by constructing a high level representation of the model using familiar GIS objects: points, arcs and polygons. Work with large, complex models in a simple and efficient manner by using the conceptual modeling approach and easily update or change the model as needed.
+        ### Flexible modeling approaches
+Aquaveo pioneered the conceptual model approach. Build a conceptual model in SMS by constructing a high level representation of the model using familiar GIS objects: points, arcs and polygons. Work with large, complex models in a simple and efficient manner by using the conceptual modeling approach and easily update or change the model as needed.
 
-`SMS also has powerful tools to build meshes and grids.</description>
-`    <summary>Access a full range of coastal and riverine solutions with SMS - the leading application for surface-water modeling</summary>
-`    <copyright>2019 Aquaveo, LLC</copyright>
-`    <tags>sms aquaveo trial</tags>
-`    <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
-`  </metadata>
-`</package>
+SMS also has powerful tools to build meshes and grids.</description>
+    <summary>Access a full range of coastal and riverine solutions with SMS - the leading application for surface-water modeling</summary>
+    <copyright>2019 Aquaveo, LLC</copyright>
+    <tags>sms aquaveo trial</tags>
+    <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
+  </metadata>
+</package>
 "@
     }
     if ($xmsVersion -eq "wms") {
@@ -160,7 +160,7 @@ function UpdatePackage ($xmsVersion, $onlineVersion, $link) {
 function FindVersions($xmsVersion, $NuspecFile){
 
     $baseURL    = "https://aquaveo.com/downloads-"
-    Write-Host "Checking if " $xmsVersion " needs to be updated"
+    Write-Host "Checking if $xmsVersion needs to be updated" -ForegroundColor Green
     $fullURL = $baseURL + $xmsVersion
     $HttpContent = Invoke-WebRequest -URI $fullURL
     $firstLink = $HttpContent.Links | Where-Object {$_.href -like "*downloads.aquaveo.com*"} | Select-Object -First 1
@@ -177,8 +177,8 @@ function FindVersions($xmsVersion, $NuspecFile){
     $onlineVersion = New-Object -TypeName System.Version -ArgumentList $onlineVersion.Major,$onlineVersion.Minor,$onlineVersion.Build
     $chocoVersion = New-Object -TypeName System.Version -ArgumentList $chocoVersion.Major,$chocoVersion.Minor,$chocoVersion.Build
 
-    $onlineVersion
-    $chocoVersion
+    Write-Host $onlineVersion -ForegroundColor Green
+    Write-Host $chocoVersion -ForegroundColor DarkGreen
     Write-Host ""
 
     $result = CompareVersion $onlineVersion $chocoVersion;
@@ -187,7 +187,8 @@ function FindVersions($xmsVersion, $NuspecFile){
         UpdatePackage $xmsVersion $onlineVersion $link;
     }
     else {
-        Write-Host "$xmsVersion is up  to date"
+        Write-Host "$xmsVersion is up  to date" -ForegroundColor Green
+        Write-Host "==================" -ForegroundColor Red
         Write-Host ""
     }   
 }
