@@ -23,14 +23,14 @@ function NuspecFile ($xmsVersion, $onlineVersion){
     <iconUrl>https://cdn.jsdelivr.net/gh/kylebaker/AquaveoChocolateyPackages@master/icons/gms-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-    # GMS - Groundwater Modeling System
+# GMS - Groundwater Modeling System
 
 ## Speed up &amp; simplify model building with the conceptual model approach in GMS
 
 We pioneered conceptual modeling and have refined it over many years. That's why GMS is the quickest and most 
 intuitive groundwater modeling interface available. Construct a high level representation of the model using 
 familiar GIS objects: points, arcs and polygons and easily update the model as needed. Conceptual modeling in 
-GMS [starting at 2,400](https://aquaveo.com/software/gms-pricing) (including 3D visualization)
+GMS [starting at $2,400](https://aquaveo.com/software/gms-pricing) (including 3D visualization)
 
 For models with simple geometry and boundary conditions, use the grid approach and edit values directly in 
 the grid.
