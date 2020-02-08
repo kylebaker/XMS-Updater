@@ -274,27 +274,6 @@ The complete all-in-one watershed solution
 * Land use change impact modeling
 * Groundwater/surface-water interaction modeling
 * Sediment and contaminant modeling
-
----
-## Import what you need
-
-* USGS DEMs - download and use any format of DEM from the USGS
-* USGS NED data - seamless elevation data can be downloaded and read into WMS
-* ArcGIS Raster (ASCII format) - read elevation or attribute data in gridded format from ArcGIS
-* ESRI Shape files - read all shapes and attributes into WMS
-* DXF and DWG CAD files - WMS now supports the latest versions of DXF and DWG
-* TIFF, JPEG image files - /images along with geo-referencing information can be read by WMS
-* Any data supported by ArcGIS can be read into WMS (ArcGIS license required, compatible with ArcGIS 10.0)
-
----
-## Software from an Industry Leader
-
-* Step-by-step tutorials and how-to videos
-* Online community forum and product documentation
-* Phone and email technical support
-* Regularly scheduled training courses taught by expert modelers
-* On-site training available
-* Professional consulting services
     </description>
     <summary>All-in-one hydrologic and hydraulic solutions and pipe network tools.</summary>
     <copyright>2020 Aquaveo, LLC</copyright>
