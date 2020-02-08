@@ -88,7 +88,7 @@ GMS is developed by Aquaveo, an engineering services company with many years of 
 * Professional consulting services
     </description>
     <summary>Groundwater and subsurface simulations in a 3D environment.</summary>
-    <copyright>2019 Aquaveo, LLC</copyright>
+    <copyright>2020 Aquaveo, LLC</copyright>
     <tags>wms aquaveo trial</tags>
     <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
   </metadata>
@@ -171,7 +171,7 @@ SMS is developed by Aquaveo, an engineering services company with many years of 
 * Professional consulting services
 </description>
     <summary>Access a full range of coastal and riverine solutions with SMS - the leading application for surface-water modeling</summary>
-    <copyright>2019 Aquaveo, LLC</copyright>
+    <copyright>2020 Aquaveo, LLC</copyright>
     <tags>sms aquaveo trial</tags>
     <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
   </metadata>
@@ -297,7 +297,7 @@ The complete all-in-one watershed solution
 * Professional consulting services
     </description>
     <summary>All-in-one hydrologic and hydraulic solutions and pipe network tools.</summary>
-    <copyright>2019 Aquaveo, LLC</copyright>
+    <copyright>2020 Aquaveo, LLC</copyright>
     <tags>wms aquaveo trial</tags>
     <bugTrackerUrl>https://bugs.aquaveo.com</bugTrackerUrl>
   </metadata>
